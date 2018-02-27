@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+
+    "name": "Teambition Subtask Adder",
+    "description": "This extension allows you to add teambition subtasks in batch.",
+    "version": "0.1",
+
+    "permissions": ["https://www.teambition.com/project/*"],
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": ["https://www.teambition.com/project/*"],
+            "js": ["subtask-injector.js"],
+            "css": ["injected.css"]
+        }
+    ],
+    "web_accessible_resources": ["injected.js"]
+}
+

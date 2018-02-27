@@ -1,0 +1,47 @@
+.subtask-add-batch {
+  position: relative;
+  z-index: 99999;
+  display: none;
+  height: 32px;
+}
+.subtask-add-batch input {
+  line-height: inherit !important;
+  padding: 6px 4px;
+  margin: -1px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  height: 100%;
+}
+.subtask-add-batch label {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.creating .subtask-add-batch {
+  display: block;
+}
+.subtask-add-batch-left {
+  width: 80%;
+  margin: 0 20px;
+}
+.subtask-add-batch a {
+  height: 100%;
+  float: right;
+  padding: 5px 22px;
+  margin-right: 40px;
+}
+.large-overlay {
+  height: 99%;
+  width: 99%;
+  background-color: rgba(200, 200, 200, 0.7);
+  position: absolute;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  font-size: 60px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
